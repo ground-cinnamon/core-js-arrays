@@ -841,6 +841,7 @@ describe('arrays-tasks', () => {
         },
       ].forEach((data) => {
         const actual = tasks.findLongestIncreasingSubsequence(data.arr);
+        console.log({ actual }, data);
         assert.strictEqual(data.expected, actual);
       });
     }
